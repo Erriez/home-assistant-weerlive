@@ -28,6 +28,7 @@ ITEM_TEMP = "temperature"
 ITEM_FEEL_TEMP = "temperature_feels_like"
 ITEM_WIND_SPEED = "wind_speed"
 ITEM_WIND_DIRECTION = "wind_direction"
+ITEM_WIND_DIRECTION_DEGREE = "wind_direction_degree"
 
 SENSOR_TYPES = {
     ITEM_TEMP: SensorType(
@@ -47,6 +48,11 @@ SENSOR_TYPES = {
     ),
     ITEM_WIND_DIRECTION: SensorType(
         "Wind direction",
+        "",
+        ICON_WIND_DIRECTION
+    ),
+    ITEM_WIND_DIRECTION_DEGREE: SensorType(
+        "Wind direction degree",
         "",
         ICON_WIND_DIRECTION
     ),

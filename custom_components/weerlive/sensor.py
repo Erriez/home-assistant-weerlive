@@ -30,6 +30,7 @@ from .const import (
     ITEM_FEEL_TEMP,
     ITEM_WIND_SPEED,
     ITEM_WIND_DIRECTION,
+    ITEM_WIND_DIRECTION_DEGREE,
 )
 from .const import LOGGER as _LOGGER
 from .const import SENSOR_TYPES, UPDATE_INTERVAL, SensorType
@@ -140,6 +141,8 @@ class WeerliveSensor(CoordinatorEntity, SensorEntity):
             return round(self._api.feel_temperature, 1)
         elif self._sensor_type_name == ITEM_WIND_DIRECTION:
             return self._api.wind_direction
+        elif self._sensor_type_name == ITEM_WIND_DIRECTION_DEGREE:
+            return self._api.wind_direction_degree
         elif self._sensor_type_name == ITEM_WIND_SPEED:
             return self._api.wind_speed
         else:

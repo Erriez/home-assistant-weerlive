@@ -33,6 +33,10 @@ class Weerlive:
         return self.data.get("windr")
 
     @property
+    def wind_direction_degree(self) -> Optional[int]:
+        return self.data.get("windrgr")
+
+    @property
     def wind_speed(self) -> float:
         return float(self.data.get("windkmh"))
 

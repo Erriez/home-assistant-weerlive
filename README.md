@@ -30,6 +30,7 @@ sensor:
       - temperature
       - temperature_feels_like
       - wind_direction
+      - wind_direction_degree
       - wind_speed
 ```
 
@@ -40,6 +41,7 @@ sensor:
 | sensor.weerlive.temperature            | The current temperature for the given location | 24.5 °C   |
 | sensor.weerlive.temperature_feels_like | How the temperature feels                      | 22.8 °C   |
 | sensor.weerlive.wind_direction         | Direction of the wind                          | e.g. NW   |
+| sensor.weerlive.wind_direction_degree  | Direction of the wind degree                   | e.g. 260° |
 | sensor.weerlive.wind_speed             | The wind speed                                 | 22.1 km/h |
 
 ## Requesting a (free) API key
